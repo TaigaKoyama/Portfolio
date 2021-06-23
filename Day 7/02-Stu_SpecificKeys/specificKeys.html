@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Events!</title>
+
+  </head>
+  <body>
+    <h1>Please press the A, B, C, or D buttons!</h1>
+
+    <script type="text/javascript">
+    var Streak = 1;
+    document.onkeyup = function(event) {
+      var keyPressed = event.key;
+      if (event.key == "a" || event.key=="b" || event.key=="c" || event.key=="d") {
+        alert("YOU PRESSED A GOOD BUTTON! YOU HAVE A STREAK OF " + Streak++)
+      }
+      else {
+          alert("WRONG CHOICE! TRY AGAIN!");
+          Streak = 0;
+        }
+      }
+    </script>
+  </body>
+</html>

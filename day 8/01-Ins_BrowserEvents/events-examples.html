@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Events!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  </head>
+  <body>
+    <h1>Press a key and I will tell you what it was!</h1>
+
+    <!-- We have to put this at the end of our document to ensure the user-text
+         span exists when we try to access it. -->
+    <script type="text/javascript">
+
+      // Next, we give JavaScript a function to execute when onkeyup event fires.
+      document.onkeyup = function(event) {
+        var keyPressed = event.key;
+        alert("You pressed the "+ keyPressed + " key!")
+      };
+    </script>
+  </body>
+</html>
